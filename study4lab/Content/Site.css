@@ -1,0 +1,85 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+table {
+    overflow: hidden;
+    border: 1px solid #00bfff;
+    background: white;
+    width: 70%;
+    margin: 5% auto 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 1px blue;
+    -webkit-box-shadow: 0 0 1px blue;
+}
+
+th, td {
+    padding: 18px 28px 18px;
+    text-align: left;
+}
+
+th {
+    padding-top: 22px;
+    background: #00bfff;
+}
+
+td {
+    border-top: 1px solid #00bfff;
+    border-right: 1px solid #00bfff;
+}
+
+    td.first, th.first {
+        text-align: left
+    }
+    td.last {
+        border-right: none;
+    }
+
+.navbar {
+    display: normal;
+    background-color: #00bfff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        color: black;
+        background-color: transparent;
+    }
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: black;
+    background-color: transparent;
+}

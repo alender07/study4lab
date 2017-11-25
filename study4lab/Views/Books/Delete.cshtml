@@ -1,0 +1,37 @@
+﻿@model study4lab.Models.Book
+@{
+    ViewBag.Title = "Удаление";
+}
+
+<h3>Вы уверены, что хотите удалить книгу ?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Имя автора
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author.Name)
+        </dd>
+
+        <dt>
+            Название книги
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Да!" class="btn btn-default" /> |
+            @Html.ActionLink("Вернуться назад", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<study4lab.Models.Author>
+
+@{
+            ViewBag.Title = "Авторы";
+}
+<link href="~/Content/Site.css" rel="stylesheet" />
+<style>
+    a.button {
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+        background: #00bfff;
+        box-shadow: 0 -3px #42aaff inset;
+        transition: 0.2s;
+    }
+
+        a.button:hover {
+            background: #42aaff;
+        }
+
+        a.button:active {
+            background: red;
+            box-shadow: 0 3px rgb(33,147,90) inset;
+        }
+</style>
+
+
+<h2>Список авторов</h2>
+<br />
+<p align="center">
+    <a href=@Url.Action("Create", "Authors") class="button">Добавить автора</a>
+    
+</p>
+<table class="table">
+    <tr>
+        <th align="center">
+            Имя автора
+        </th>
+        <th align="center">
+            Года жизни
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Years)
+            </td>
+            <td>
+                @Html.ActionLink("Редактировать", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Просмотр", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Удалить", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

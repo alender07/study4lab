@@ -1,0 +1,33 @@
+﻿@model study4lab.Models.Author
+
+@{
+    ViewBag.Title = "Подробности";
+}
+
+<h2>Подробности</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+           Имя автора
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            Годы жизни
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Years)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Ок", "Index", new { id = Model.Id }) |
+    @Html.ActionLink("Вернуться назад", "Index")
+</p>
