@@ -33,5 +33,7 @@ namespace study4lab.Models
         public System.Data.Entity.DbSet<study4lab.Models.Author> Authors { get; set; }
 
         public System.Data.Entity.DbSet<study4lab.Models.Book> Books { get; set; }
+
+        public System.Data.Entity.DbSet<study4lab.Models.Reg> Regs { get; set; }
     }
 }

@@ -89,5 +89,8 @@ C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.dll
 C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.pdb
 C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.Migrations.first.resources
 C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.csproj.GenerateResource.Cache
-C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.csprojResolveAssemblyReference.cache
 C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.Migrations.DataAnnotations.resources
+C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.Migrations.second.resources
+C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.Migrations.second1.resources
+C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.Migrations.second2.resources
+C:\Users\User\source\repos\study4lab\study4lab\obj\Debug\study4lab.csprojResolveAssemblyReference.cache

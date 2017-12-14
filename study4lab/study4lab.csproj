@@ -192,6 +192,7 @@
     <Compile Include="Controllers\AuthorsController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RegsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,18 +204,36 @@
     <Compile Include="Migrations\201711211825194_DataAnnotations.Designer.cs">
       <DependentUpon>201711211825194_DataAnnotations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711290822225_second.cs" />
+    <Compile Include="Migrations\201711290822225_second.Designer.cs">
+      <DependentUpon>201711290822225_second.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711290841044_second1.cs" />
+    <Compile Include="Migrations\201711290841044_second1.Designer.cs">
+      <DependentUpon>201711290841044_second1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711290847459_second2.cs" />
+    <Compile Include="Migrations\201711290847459_second2.Designer.cs">
+      <DependentUpon>201711290847459_second2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\CommonTable.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Reg.cs" />
+    <Compile Include="Models\RegContext.cs" />
+    <Compile Include="Models\RegLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\booklogo.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\huge.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -228,6 +247,8 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -279,6 +300,14 @@
     <Content Include="Views\Books\Details.cshtml" />
     <Content Include="Views\Books\Edit.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Views\Books\BookSearch.cshtml" />
+    <Content Include="Views\Regs\Auth.cshtml" />
+    <Content Include="Views\Regs\Create.cshtml" />
+    <Content Include="Views\Regs\Delete.cshtml" />
+    <Content Include="Views\Regs\Details.cshtml" />
+    <Content Include="Views\Regs\Edit.cshtml" />
+    <Content Include="Views\Regs\Index.cshtml" />
+    <Content Include="Views\Home\ShowData.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -302,6 +331,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711211825194_DataAnnotations.resx">
       <DependentUpon>201711211825194_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711290822225_second.resx">
+      <DependentUpon>201711290822225_second.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711290841044_second1.resx">
+      <DependentUpon>201711290841044_second1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711290847459_second2.resx">
+      <DependentUpon>201711290847459_second2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

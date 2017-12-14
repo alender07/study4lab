@@ -1,0 +1,27 @@
+﻿@using study4lab.Models
+@model IList<CommonTable>
+@{
+    ViewBag.Title = "Работа с SQL базой";
+}
+<h4>Результат выборки данных из базы PUBS</h4>
+<h2>Работа с SQL базой</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Название произведения</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var row in Model)
+        {
+            <tr>
+                <td>@row.lname</td>
+                <td>@row.fname</td>
+                <td>@row.title</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
